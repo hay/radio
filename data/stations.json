@@ -1,0 +1,26 @@
+[
+    {
+        "title" : "Radio 1",
+        "url" : "http://shoutcast2.omroep.nl:8100/;"
+    },
+    {
+        "title" : "Radio 2",
+        "url" : "http://shoutcast2.omroep.nl:8102/;"
+    },
+    {
+        "title" : "3FM",
+        "url" : "http://shoutcast2.omroep.nl:8104/;"
+    },
+    {
+        "title" : "Radio 4",
+        "url" : "http://shoutcast2.omroep.nl:8106/;"
+    },
+    {
+        "title" : "Radio 5",
+        "url" : "http://shoutcast2.omroep.nl:8108/;"
+    },
+    {
+        "title" : "Radio 6",
+        "url" : "http://shoutcast2.omroep.nl:8110/;"
+    }
+]
