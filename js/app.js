@@ -12,11 +12,6 @@ jQuery(document).ready(function($) {
         });
     }
 
-    AudioPlayer.setup("js/audio-player/player.swf", {
-        width : 300,
-        autostart : "yes"
-    });
-
     function initStations() {
         function playMe(el) {
             var url = $(el).attr('href');
@@ -46,16 +41,35 @@ jQuery(document).ready(function($) {
         });
     }
 
-    $.getJSON("data/stations.json", function(data) {
-        template(
-            "stations",
-            {
-                stations : data
-            },
-            function(html) {
-                $("#stations div").replaceWith(html);
-                initStations();
-            }
-        )
-    });
+    function getStations() {
+        $.getJSON("data/stations.json", function(data) {
+            template(
+                "stations",
+                {
+                    stations : data
+                },
+                function(html) {
+                    $("#stations div").replaceWith(html);
+                    initStations();
+                }
+            )
+        });
+    }
+
+    function initAudioPlayer() {
+        AudioPlayer.setup("js/audio-player/player.swf", {
+            width : 300,
+            autostart : "yes",
+            animation : "no",
+            noinfo : "yes",
+            transparentpagebg : "yes"
+        });
+    }
+
+    function init() {
+        initAudioPlayer();
+        getStations();
+    }
+
+    init();
 });

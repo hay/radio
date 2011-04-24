@@ -22,5 +22,9 @@
     {
         "title" : "Radio 6",
         "url" : "http://shoutcast2.omroep.nl:8110/;"
+    },
+    {
+        "title" : "Nijmegen1",
+        "url" : "http://icecast.streamone.nl:9080/nijmegen1"
     }
 ]
