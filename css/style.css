@@ -20,7 +20,7 @@ body {
     float: left;
 }
 
-    #stations h2 {
+    #stations p, #stations p a {
         color: #999;
     }
 
@@ -33,4 +33,8 @@ body {
 
     #stations a:hover, #stations a.now {
         color: red;
+    }
+
+    #stations .info {
+        margin-top: 25px;
     }

@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
             loadAudio(url);
         }
 
-        $("#stations").delegate("a", "click", function(e) {
+        $("#stations .stations").delegate("a", "click", function(e) {
             e.preventDefault();
 
             $("#stations a").removeClass('now');
@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
                     stations : data
                 },
                 function(html) {
-                    $("#stations div").replaceWith(html);
+                    $("#stations .stations").html(html);
                     initStations();
                 }
             )
